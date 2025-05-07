@@ -13,9 +13,9 @@ export async function POST(request: NextRequest) {
       }, { status: 400 });
     }
 
-    // const { summary, docs } = await simpleSearchFlow(query);
+    // const { summary, docs } = await simpleSearchFlow(query); --- used for overall goodle search
 
-    const { summary, docs } = await researchFlow(query);
+    const { summary, docs } = await researchFlow(query);  // --- used for programmable search engine
 
     return NextResponse.json({
       summary: summary,

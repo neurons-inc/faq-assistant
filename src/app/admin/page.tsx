@@ -5,6 +5,68 @@ import URLManager from '@/app/components/AdminPanel/URLManager';
 import { DocumentList, DocumentListSkeleton } from '@/app/components/AdminPanel/DocumentList';
 import ExtractedContentResults from '@/app/components/AdminPanel/ExtractedContentResults';
 
+const urlsList = [
+  "https://knowledge.neuronsinc.com",
+  "https://knowledge.neuronsinc.com/",
+  "https://knowledge.neuronsinc.com/ai-insights-and-recommendations",
+  "https://knowledge.neuronsinc.com/api",
+  "https://knowledge.neuronsinc.com/benchmark-aoi-definitions",
+  "https://knowledge.neuronsinc.com/benchmark-category-definitions",
+  "https://knowledge.neuronsinc.com/benchmark-industry-definitions",
+  "https://knowledge.neuronsinc.com/benchmark-purpose-definitions",
+  "https://knowledge.neuronsinc.com/benchmark-use-case-definitions",
+  "https://knowledge.neuronsinc.com/change-remove-access",
+  "https://knowledge.neuronsinc.com/change-reset-password",
+  "https://knowledge.neuronsinc.com/comparison-tool",
+  "https://knowledge.neuronsinc.com/delete-folders-and-files",
+  "https://knowledge.neuronsinc.com/delete-your-account",
+  "https://knowledge.neuronsinc.com/download-neurons-ai-results",
+  "https://knowledge.neuronsinc.com/download-predict-results",
+  "https://knowledge.neuronsinc.com/features-and-tools",
+  "https://knowledge.neuronsinc.com/get-started",
+  "https://knowledge.neuronsinc.com/getting-started-with-the-neurons-ai-api",
+  "https://knowledge.neuronsinc.com/heatmap",
+  "https://knowledge.neuronsinc.com/how-do-i-change-who-has-access-to-the-platform",
+  "https://knowledge.neuronsinc.com/how-neurons-attention-prediction",
+  "https://knowledge.neuronsinc.com/how-to-run-your-first-prediction",
+  "https://knowledge.neuronsinc.com/how-to-use-neurons-ai-benchmarks",
+  "https://knowledge.neuronsinc.com/how-to-use-our-help-center-and-ai-support",
+  "https://knowledge.neuronsinc.com/how-to-use-predict-benchmarks",
+  "https://knowledge.neuronsinc.com/how-to-use-scene-detection-with-neurons-ai-api",
+  "https://knowledge.neuronsinc.com/how-to-work-with-aois",
+  "https://knowledge.neuronsinc.com/invite-members",
+  "https://knowledge.neuronsinc.com/manage-profile-information",
+  "https://knowledge.neuronsinc.com/metrics-and-explanations",
+  "https://knowledge.neuronsinc.com/move-folders-and-files",
+  "https://knowledge.neuronsinc.com/multi-factor-authentication-mfa",
+  "https://knowledge.neuronsinc.com/neurons-ai-benchmarks-calculation",
+  "https://knowledge.neuronsinc.com/neurons-ai-benchmarks-system",
+  "https://knowledge.neuronsinc.com/neurons-ai-heatmaps-and-interpretation",
+  "https://knowledge.neuronsinc.com/neurons-ai-in-chrome",
+  "https://knowledge.neuronsinc.com/neurons-ai-in-figma",
+  "https://knowledge.neuronsinc.com/neurons-ai-metrics-and-explanations",
+  "https://knowledge.neuronsinc.com/neurons-ai-plugins",
+  "https://knowledge.neuronsinc.com/neurons-ai-scores-and-models",
+  "https://knowledge.neuronsinc.com/neurons-avoidance-prediction",
+  "https://knowledge.neuronsinc.com/neurons-engagement-prediction",
+  "https://knowledge.neuronsinc.com/neurons-intent-prediction",
+  "https://knowledge.neuronsinc.com/neurons-memory-prediction",
+  "https://knowledge.neuronsinc.com/neurons-trust-prediction",
+  "https://knowledge.neuronsinc.com/neuronsai-datasheet",
+  "https://knowledge.neuronsinc.com/predict-scores",
+  "https://knowledge.neuronsinc.com/rename-folders-and-files",
+  "https://knowledge.neuronsinc.com/sign-in-and-out",
+  "https://knowledge.neuronsinc.com/understanding-and-working-with-aois",
+  "https://knowledge.neuronsinc.com/upload-and-delete-files-to-neurons-ai",
+  "https://knowledge.neuronsinc.com/upload-requirements-neurons-ai",
+  "https://knowledge.neuronsinc.com/user-roles-and-permissions",
+  "https://knowledge.neuronsinc.com/using-vast-ingestion-for-html5-ads",
+  "https://knowledge.neuronsinc.com/what-are-the-ai-insights-and-recommendations",
+  "https://knowledge.neuronsinc.com/what-are-the-user-roles-and-permissions",
+  "https://knowledge.neuronsinc.com/what-is-an-aoi",
+  "https://knowledge.neuronsinc.com/working-with-areas-of-interest-aois-in-the-neurons-api"
+];
+
 // Types
 interface Document {
   id: string;
@@ -21,7 +83,7 @@ interface ExtractedContent {
 
 const AdminPanel = () => {
   // State
-  const [urls, setUrls] = useState('https://knowledge.neuronsinc.com/neurons-ai-metrics-and-explanations');
+  const [urls, setUrls] = useState(urlsList);
   const [entityDescription, setEntityDescription] = useState('Extract the main textual content from the url. Remove all navigation bars, ads, sidebars, and unrelated content. Retain only the main article, report, or relevant body text. Format the output as plain text, with paragraphs and subheadings preserved if present. Ensure each chunk starts and ends at logical sentence boundaries and preserves the semantic flow.');
   const [isIndexing, setIsIndexing] = useState<{ [key: string]: boolean }>({});
   const [error, setError] = useState<string>();
