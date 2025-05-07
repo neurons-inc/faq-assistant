@@ -14,7 +14,6 @@ interface Document {
 }
 
 interface ExtractedContent {
-  url: string;
   status: 'success' | 'error';
   data?: string;
   error?: string;
@@ -22,8 +21,8 @@ interface ExtractedContent {
 
 const AdminPanel = () => {
   // State
-  const [urls, setUrls] = useState('');
-  const [entityDescription, setEntityDescription] = useState('');
+  const [urls, setUrls] = useState('https://knowledge.neuronsinc.com/neurons-ai-metrics-and-explanations');
+  const [entityDescription, setEntityDescription] = useState('Extract the main textual content from the url. Remove all navigation bars, ads, sidebars, and unrelated content. Retain only the main article, report, or relevant body text. Format the output as plain text, with paragraphs and subheadings preserved if present. Ensure each chunk starts and ends at logical sentence boundaries and preserves the semantic flow.');
   const [isIndexing, setIsIndexing] = useState<{ [key: string]: boolean }>({});
   const [error, setError] = useState<string>();
   const [isLoadingDocs, setIsLoadingDocs] = useState(true);

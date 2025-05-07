@@ -48,7 +48,9 @@ const URLManager: React.FC<URLManagerProps> = ({
         <textarea
           value={entityDescription}
           onChange={(e) => onEntityDescriptionChange(e.target.value)}
-          placeholder="Describe the type of content you are looking to extract; Example: Raw text GCP documentation and best practices"
+          placeholder="Extract the main textual content from the url. Remove all navigation bars, ads, sidebars, and unrelated content. 
+          Retain only the main article, report, or relevant body text. Format the output as plain text, with paragraphs and subheadings preserved if present. 
+          Ensure each chunk starts and ends at logical sentence boundaries and preserves the semantic flow."
           className="w-full h-48 p-4 border border-gray-200 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent font-mono text-sm"
           disabled={isSubmitting}
         />
