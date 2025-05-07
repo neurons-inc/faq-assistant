@@ -14,8 +14,8 @@ const LandingPage = () => {
             </h1>
             <div className="relative group cursor-pointer">
               <Image
-                src="/aaron-the-intern.png"
-                alt="Aaron the intern"
+                src="/faq.png"
+                alt="faq-logo"
                 width={48}
                 height={48}
                 className="w-12 h-12 transition-transform transform group-hover:scale-110"
