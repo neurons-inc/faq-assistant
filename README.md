@@ -112,7 +112,7 @@ Now, look for the `Challenge1.md` file in the root directory and follow the inst
 
 Here is an overview of the challenges and the learnings they contain:
 
-![Aaron the Intern](./aaron-arch.png)
+![FAQ assistant](./aaron-arch.png)
 
 ### Challenge 1: LLM Powered Data Mining 🕵️‍♀️
 
