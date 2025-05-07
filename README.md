@@ -1,8 +1,8 @@
-# Building Aaron the Intern, your personal Deep Research Assistant 👩‍💻👨‍💻
+# Building FAQ Assistant, your personal Deep Research Assistant 👩‍💻👨‍💻
 
 Imagine you are the newest engineer at Google Cloud. Your task is helping your GCP customers make their tech work on GCP. You surely would love an intern to do the tedious technical research work for you...
 
-Well, great that you live in the age of AI. So why not just building that intern yourself? Let's call "it": **"Aaron the intern"**.
+Well, great that you live in the age of AI. So why not just building that intern yourself? Let's call "it": **"FAQ Assistant"**.
 
 This lab is designed to guide you through the complexity of GCP, Gemini, Firebase Genkit and more while building a real-world application. We'll be tackling a series of challenges, each building upon the last, to transform a basic Next.js application into a powerful AI-driven technical research tool.
 
@@ -19,7 +19,7 @@ Go to the [GCP Console](https://console.cloud.google.com/), login with your cred
 **2. Fork the Workshop Content:**
 *   Go to the [original repository page](https://github.com/jakobap/aaron) on GitHub and click the "Fork" button in the top-right corner.
 *   On the fork creation page, **IMPORTANT:** Make sure to **uncheck** the box labeled "Copy the `main` branch only". This ensures you get all the necessary challenge branches.
-![Aaron the Intern](./fork.png)
+![FAQ Assistant](./fork.png)
 *   Click "Create fork".
 
 **3. Open Your Fork in IDX:**
@@ -162,4 +162,4 @@ Here is an overview of the challenges and the learnings they contain:
 
 Each challenge will have its own detailed `README.md` file within its branch, providing specific instructions and hints.
 
-So, are you ready to build yoru own "Aaron the intern" and master the power of Generative AI on GCP? Let's get started!  Head over to `challenge-1` branch to begin your adventure! Good luck, and have fun! 🎉
+So, are you ready to build your own "FAQ Assistant" and master the power of Generative AI on GCP? Let's get started!  Head over to `challenge-1` branch to begin your adventure! Good luck, and have fun! 🎉
